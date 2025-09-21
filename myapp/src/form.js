@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CheckCircle2, Home, Users, DollarSign, TrendingUp } from 'lucide-react';
 
 export default function StudentHousingSurvey() {
     const [formData, setFormData] = useState({
@@ -29,7 +28,9 @@ export default function StudentHousingSurvey() {
             <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
                 <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
                     <div className="text-center">
-                        <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                        <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span className="text-white text-2xl">✓</span>
+                        </div>
                         <h2 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h2>
                         <p className="text-gray-600">Your survey response has been submitted successfully.</p>
                     </div>
@@ -43,7 +44,7 @@ export default function StudentHousingSurvey() {
             <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full mb-4">
-                        <Home className="w-8 h-8" />
+                        <span className="text-2xl">🏠</span>
                     </div>
                     <h1 className="text-3xl font-bold text-gray-900 mb-2">Student Housing Survey</h1>
                     <div className="flex items-center justify-center gap-2 mb-4">
@@ -59,7 +60,7 @@ export default function StudentHousingSurvey() {
                     <div className="bg-white rounded-lg shadow-lg border-0 overflow-hidden">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <div className="flex items-center gap-3 mb-2">
-                                <TrendingUp className="w-5 h-5 text-blue-600" />
+                                <span className="w-5 h-5 text-blue-600">📈</span>
                                 <h3 className="text-lg font-semibold text-gray-900">Question 1</h3>
                             </div>
                             <p className="text-base text-gray-600">
@@ -98,7 +99,7 @@ export default function StudentHousingSurvey() {
                     <div className="bg-white rounded-lg shadow-lg border-0 overflow-hidden">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <div className="flex items-center gap-3 mb-2">
-                                <Home className="w-5 h-5 text-blue-600" />
+                                <span className="w-5 h-5 text-blue-600">🏠</span>
                                 <h3 className="text-lg font-semibold text-gray-900">Question 2</h3>
                             </div>
                             <p className="text-base text-gray-600">
@@ -125,7 +126,7 @@ export default function StudentHousingSurvey() {
                     <div className="bg-white rounded-lg shadow-lg border-0 overflow-hidden">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <div className="flex items-center gap-3 mb-2">
-                                <Users className="w-5 h-5 text-blue-600" />
+                                <span className="w-5 h-5 text-blue-600">👥</span>
                                 <h3 className="text-lg font-semibold text-gray-900">Question 3</h3>
                             </div>
                             <p className="text-base text-gray-600">
@@ -161,7 +162,7 @@ export default function StudentHousingSurvey() {
                     <div className="bg-white rounded-lg shadow-lg border-0 overflow-hidden">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <div className="flex items-center gap-3 mb-2">
-                                <DollarSign className="w-5 h-5 text-blue-600" />
+                                <span className="w-5 h-5 text-blue-600">💰</span>
                                 <h3 className="text-lg font-semibold text-gray-900">Question 4</h3>
                             </div>
                             <p className="text-base text-gray-600">
